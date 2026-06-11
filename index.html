@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tail End Sanctuary gives lifelong care to senior stray dogs in the Lake Chapala area of Mexico — safety, comfort, compassion, and dignity in their final chapter.">
   <title>Tail End Sanctuary — Where Every Dog's Final Chapter is Filled with Love</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -20,7 +21,7 @@
           <small>LOVE. COMFORT. DIGNITY.</small>
         </div>
       </a>
-      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">☰</button>
+      <button class="nav-toggle" onclick="var l=document.querySelector('.nav-links');l.classList.toggle('open');this.setAttribute('aria-expanded',l.classList.contains('open'))" aria-expanded="false" aria-label="Toggle menu">☰</button>
       <ul class="nav-links">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About Us</a></li>
@@ -32,6 +33,8 @@
     </div>
   </nav>
 
+  <main>
+
   <!-- HERO -->
   <section class="hero-image hero-home">
     <img src="images/dogs/ringo.jpeg" alt="Ringo, a senior dog at Tail End Sanctuary" class="hero-bg">
@@ -39,10 +42,9 @@
     <div class="container">
       <div class="hero-content">
         <h1>Where every dog's final chapter is filled with love</h1>
-        <p>We rescue senior dogs and give them safety, care, and dignity for the rest of their lives.</p>
         <div class="btn-group">
           <a href="donate.html" class="btn btn-donate">Give Them a Peaceful Ending</a>
-          <a href="dogs.html" class="btn btn-secondary" style="border-color: rgba(255,255,255,0.8); color: white;">Meet the Dogs</a>
+          <a href="dogs.html" class="btn btn-dog">Meet the Dogs</a>
         </div>
       </div>
     </div>
@@ -61,7 +63,7 @@
           <p><strong>He has cancer.</strong></p>
           <p>But today, Teddy is safe. He has a warm bed, gentle medical care, and people who sit with him, comfort him, and make sure he is never alone again.</p>
           <p>At Tail End Sanctuary, dogs like Teddy are not defined by how they suffered—but by how they are loved in the time they have left. His story didn't end on that street. It began the moment someone saw him.</p>
-          <a href="donate.html" class="btn btn-primary">Help Dogs Like Teddy</a>
+          <a href="donate.html" class="btn btn-dog">Help Dogs Like Teddy</a>
         </div>
       </div>
     </div>
@@ -71,27 +73,7 @@
   <section class="section section-cream">
     <div class="container">
       <div class="section-centered">
-        <h2 style="margin-bottom: 24px;">At Tail End Sanctuary, we <em>provide lifelong care</em> for senior stray dogs who have nowhere else to go.</h2>
-        <p style="font-size: 1.15rem; color: var(--text-light); margin-bottom: 48px;">We believe every dog deserves</p>
-        
-        <div class="values-grid">
-          <div class="value-item" style="background: var(--white); padding: 32px 24px; border-radius: var(--radius); box-shadow: var(--shadow);">
-            <h3 style="font-size: 1.5rem; margin-bottom: 8px;">Safety</h3>
-            <p style="font-size: 0.95rem; color: var(--text-light);">A secure place to rest without fear.</p>
-          </div>
-          <div class="value-item" style="background: var(--white); padding: 32px 24px; border-radius: var(--radius); box-shadow: var(--shadow);">
-            <h3 style="font-size: 1.5rem; margin-bottom: 8px;">Comfort</h3>
-            <p style="font-size: 0.95rem; color: var(--text-light);">Warm beds, gentle care, daily nourishment.</p>
-          </div>
-          <div class="value-item" style="background: var(--white); padding: 32px 24px; border-radius: var(--radius); box-shadow: var(--shadow);">
-            <h3 style="font-size: 1.5rem; margin-bottom: 8px;">Compassion</h3>
-            <p style="font-size: 0.95rem; color: var(--text-light);">Consistent human companionship and love.</p>
-          </div>
-          <div class="value-item" style="background: var(--white); padding: 32px 24px; border-radius: var(--radius); box-shadow: var(--shadow);">
-            <h3 style="font-size: 1.5rem; margin-bottom: 8px;">Dignity</h3>
-            <p style="font-size: 0.95rem; color: var(--text-light);">Every life honored until the very end.</p>
-          </div>
-        </div>
+        <p class="mission-copy">At Tail End Sanctuary our mission is simple: to give lifelong care to senior stray dogs who have nowhere else to go. We believe every dog deserves safety, comfort, compassion, and dignity.</p>
       </div>
     </div>
   </section>
@@ -100,7 +82,7 @@
   <section class="section section-alt">
     <div class="container">
       <div style="max-width: 840px; margin: 0 auto; text-align: center;">
-        <h2 style="margin-bottom: 32px;">Why This Matters</h2>
+        <h2 style="margin-bottom: 32px;">What Motivates Us</h2>
         <p style="font-size: 1.1rem; line-height: 1.9; color: var(--text); margin-bottom: 20px;">Many Mexican street dogs never reach their senior years. Those who do have often endured years of hardship, scavenging to survive. When age slows them down they can no longer fend for themselves.</p>
         <p style="font-size: 1.1rem; line-height: 1.9; color: var(--text); margin-bottom: 20px;">That's where Tail End Sanctuary steps in. We give these resilient dogs a soft place to rest their weary bones, regular nourishing meals, and the love and companionship they deserve.</p>
         <p style="font-size: 1.15rem; line-height: 1.9; color: var(--sage-dark); font-weight: 500; font-style: italic;">A life that was invisible is finally seen.</p>
@@ -114,10 +96,12 @@
       <h2>You can give a dog a peaceful final chapter.</h2>
       <div class="btn-group" style="justify-content: center;">
         <a href="donate.html" class="btn btn-donate">Donate</a>
-        <a href="dogs.html" class="btn btn-secondary" style="border-color: rgba(255,255,255,0.6); color: white;">Meet the Dogs</a>
+        <a href="dogs.html" class="btn btn-dog">Meet the Dogs</a>
       </div>
     </div>
   </section>
+
+  </main>
 
   <!-- FOOTER -->
   <footer class="footer">
@@ -147,7 +131,7 @@
         <h4>Get Involved</h4>
         <ul class="footer-links">
           <li><a href="donate.html">Donate</a></li>
-          <li><a href="get-involved.html">Volunteer</a></li>
+          <li><a href="get-involved.html">Ways to Help</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>

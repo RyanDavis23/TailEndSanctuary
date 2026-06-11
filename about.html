@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The story and founders of Tail End Sanctuary — a sanctuary for senior stray dogs in the Lake Chapala area of Mexico.">
   <title>About Us — Tail End Sanctuary</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -20,7 +21,7 @@
           <small>LOVE. COMFORT. DIGNITY.</small>
         </div>
       </a>
-      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">☰</button>
+      <button class="nav-toggle" onclick="var l=document.querySelector('.nav-links');l.classList.toggle('open');this.setAttribute('aria-expanded',l.classList.contains('open'))" aria-expanded="false" aria-label="Toggle menu">☰</button>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html" class="active">About Us</a></li>
@@ -32,13 +33,14 @@
     </div>
   </nav>
 
+  <main>
+
   <!-- HERO -->
   <section class="hero-simple">
     <img src="images/dogs/teddy.jpeg" alt="Senior dog resting" class="hero-bg">
     <div class="container">
       <div class="hero-content" style="max-width: 100%; text-align: center;">
         <h1>About Us</h1>
-        <p style="color: var(--text);">Giving senior dogs a peaceful, loving ending to their lives.</p>
       </div>
     </div>
   </section>
@@ -50,61 +52,15 @@
         <h2>Our Story</h2>
       </div>
       <div style="max-width: 780px; margin: 0 auto; font-size: 1.1rem; line-height: 1.85; color: var(--text);">
-        <p style="margin-bottom: 22px;">At <strong>Tail End Sanctuary</strong>, our mission is simple: to give senior dogs a peaceful, loving ending to their lives.</p>
+        <p style="margin-bottom: 22px;">In our community, the Lake Chapala area of Mexico, people kept identifying older stray dogs living on the street on their own — dogs who were no longer young, unwanted, and often struggling just to get through each day.</p>
 
-        <p style="margin-bottom: 22px;">This began with a pattern we could no longer ignore. In our community, people kept identifying older stray dogs living on the streets on their own—dogs who were no longer young, unwanted, and often struggling just to get through each day.</p>
+        <p style="margin-bottom: 22px;">They were easy to overlook but impossible to forget once you truly saw them.</p>
 
-        <p style="margin-bottom: 22px;">They were easy to overlook, but impossible to forget once you truly saw them.</p>
+        <p style="margin-bottom: 22px;">What started as concern turned into action. One dog led to another, and it became clear that these senior dogs needed something different — something beyond traditional rescue.</p>
 
-        <p style="margin-bottom: 0;">What started as concern turned into action. <em>One dog led to another</em>, and it became clear that these senior dogs needed something different—something beyond traditional rescue.</p>
-      </div>
-    </div>
-  </section>
+        <p style="margin-bottom: 22px;">Our focus is on the quality of each dog's remaining time. For many of the dogs who come to us, this is the first time they experience consistent kindness. The first time somebody notices they are in pain. The first time someone stays.</p>
 
-  <!-- WHAT WE DO -->
-  <section class="section section-cream">
-    <div class="container">
-      <div class="section-header">
-        <h2>What We Do</h2>
-        <p>We provide a safe, stable environment for senior stray dogs in the Lake Chapala area of Mexico.</p>
-      </div>
-      <div style="max-width: 900px; margin: 0 auto;">
-        <p style="text-align: center; font-size: 1.05rem; margin-bottom: 40px; color: var(--text);">Instead of leaving them in uncertainty, we focus on comfort, care, and a sense of peace.</p>
-        
-        <div style="max-width: 700px; margin: 0 auto;">
-          <ul style="list-style: none; padding: 0;">
-            <li style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px; font-size: 1.05rem;">
-              <span style="color: var(--sage); font-size: 1.3rem;">✓</span>
-              Daily care and nourishment
-            </li>
-            <li style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px; font-size: 1.05rem;">
-              <span style="color: var(--sage); font-size: 1.3rem;">✓</span>
-              Veterinary support and pain management
-            </li>
-            <li style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px; font-size: 1.05rem;">
-              <span style="color: var(--sage); font-size: 1.3rem;">✓</span>
-              A calm, secure environment
-            </li>
-            <li style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px; font-size: 1.05rem;">
-              <span style="color: var(--sage); font-size: 1.3rem;">✓</span>
-              Consistent human companionship
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- WHAT MAKES US DIFFERENT -->
-  <section class="section section-alt">
-    <div class="container">
-      <div class="section-header">
-        <h2>What Makes Us Different</h2>
-      </div>
-      <div style="max-width: 840px; margin: 0 auto; font-size: 1.05rem; line-height: 1.8; color: var(--text);">
-        <p style="margin-bottom: 20px;">We are not a traditional rescue. Our focus is on the quality of each dog's remaining time. For many of the dogs who come to us this is the first time in their lives that they experience consistent kindness. The first time somebody notices they are in pain. The first time someone stays.</p>
-        
-        <p style="margin-bottom: 20px; font-style: italic; color: var(--sage-dark);">We measure success in peaceful days.</p>
+        <p style="margin-bottom: 0; font-style: italic; color: var(--sage-dark); font-weight: 600;">We measure success in peaceful days.</p>
       </div>
     </div>
   </section>
@@ -152,10 +108,12 @@
       <p>Helping a dog doesn't always mean changing their whole life. Sometimes it just means making their final chapter peaceful and filled with love.</p>
       <div class="btn-group" style="justify-content: center;">
         <a href="donate.html" class="btn btn-donate">Support Our Work</a>
-        <a href="dogs.html" class="btn btn-secondary" style="border-color: rgba(255,255,255,0.6); color: white;">Meet the Dogs</a>
+        <a href="dogs.html" class="btn btn-dog">Meet the Dogs</a>
       </div>
     </div>
   </section>
+
+  </main>
 
   <!-- FOOTER -->
   <footer class="footer">
@@ -185,7 +143,7 @@
         <h4>Get Involved</h4>
         <ul class="footer-links">
           <li><a href="donate.html">Donate</a></li>
-          <li><a href="get-involved.html">Volunteer</a></li>
+          <li><a href="get-involved.html">Ways to Help</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>

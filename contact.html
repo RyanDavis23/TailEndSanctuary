@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Tail End Sanctuary in Lake Chapala, Mexico — send us a message, email us, or join our list for updates on the dogs.">
   <title>Contact — Tail End Sanctuary</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -20,7 +21,7 @@
           <small>LOVE. COMFORT. DIGNITY.</small>
         </div>
       </a>
-      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">☰</button>
+      <button class="nav-toggle" onclick="var l=document.querySelector('.nav-links');l.classList.toggle('open');this.setAttribute('aria-expanded',l.classList.contains('open'))" aria-expanded="false" aria-label="Toggle menu">☰</button>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
@@ -32,6 +33,8 @@
     </div>
   </nav>
 
+  <main>
+
   <!-- HERO -->
   <section class="hero-dark hero-contact">
     <img src="images/dogs/stevie.jpeg" alt="Stevie at Tail End Sanctuary" class="hero-bg">
@@ -39,8 +42,6 @@
     <div class="container">
       <div class="hero-content">
         <h1>Get in Touch</h1>
-        <p style="font-size: 1.3rem; color: rgba(255,255,255,0.95); font-style: italic; margin-bottom: 16px;">We'd love to hear from you.</p>
-        <p style="font-size: 1.05rem; color: rgba(255,255,255,0.85);">Whether you have a question, want to support our work, or simply feel moved to reach out—we're here.</p>
       </div>
     </div>
   </section>
@@ -72,7 +73,7 @@
             </div>
             
             <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; padding: 16px; font-size: 1rem;">
-              SEND MESSAGE
+              Send Message
             </button>
           </form>
         </div>
@@ -82,7 +83,7 @@
           <h3>Other Ways to Reach Us</h3>
           
           <div class="contact-info-item">
-            <div class="icon"><span style="font-weight: 600;">✉</span></div>
+            <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></div>
             <div>
               <h4>Email</h4>
               <p><a href="mailto:info@tailendsanctuary.org">info@tailendsanctuary.org</a></p>
@@ -90,7 +91,7 @@
           </div>
           
           <div class="contact-info-item">
-            <div class="icon" style="font-weight: 600;">•</div>
+            <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
             <div>
               <h4>Location</h4>
               <p>Lake Chapala, Mexico</p>
@@ -99,7 +100,7 @@
           </div>
           
           <div class="contact-info-item">
-            <div class="icon" style="font-weight: 600;">✉</div>
+            <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v12H7l-3 3z"/><path d="M8 9h8M8 12h5"/></svg></div>
             <div>
               <h4>Email Updates</h4>
               <p style="margin-bottom: 8px;">Reach out to join our email list and we'll share updates on the dogs as they come.</p>
@@ -112,37 +113,7 @@
     </div>
   </section>
 
-  <!-- A NOTE FROM OUR HEART -->
-  <section class="section section-sage">
-    <div class="container">
-      <div style="max-width: 900px; margin: 0 auto; background: rgba(255,255,255,0.1); padding: 48px 40px; border-radius: var(--radius); backdrop-filter: blur(10px);">
-        <div style="display: flex; align-items: flex-start; gap: 28px;">
-          <div style="flex-shrink: 0;">
-            <img src="images/dogs/ringo.jpeg" alt="Senior dog" style="width: 220px; height: 220px; border-radius: var(--radius); object-fit: cover; box-shadow: var(--shadow);">
-          </div>
-          <div>
-            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
-              
-              <h3 style="font-size: 1.8rem; color: white; margin: 0;">A Note from Our Heart</h3>
-              
-            </div>
-            <p style="font-size: 1.05rem; line-height: 1.8; color: rgba(255,255,255,0.95); margin-bottom: 16px;">We are not able to take in every dog in need, but we do our best to offer guidance when we can.</p>
-            <p style="font-size: 1.05rem; line-height: 1.8; color: rgba(255,255,255,0.95); font-style: italic;">Thank you for your understanding and for caring about these animals.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- THANK YOU -->
-  <section class="section section-cream" style="padding: 60px 24px;">
-    <div class="container">
-      <div style="text-align: center; max-width: 740px; margin: 0 auto;">
-        <p style="font-size: 1.15rem; color: var(--text); line-height: 1.8; margin-bottom: 16px;">Thank you for being part of this journey. Your compassion makes all the difference.</p>
-        
-      </div>
-    </div>
-  </section>
+  </main>
 
   <!-- FOOTER -->
   <footer class="footer">
@@ -172,7 +143,7 @@
         <h4>Get Involved</h4>
         <ul class="footer-links">
           <li><a href="donate.html">Donate</a></li>
-          <li><a href="get-involved.html">Volunteer</a></li>
+          <li><a href="get-involved.html">Ways to Help</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
