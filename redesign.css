@@ -104,10 +104,11 @@ h2{ font-weight:500; letter-spacing:-0.005em; }
 }
 
 /* ---- Logo: dog-mark in nav, full lockup (white) in footer ---- */
-.nav-logo-img{ width:auto; height:72px; }
-.nav-logo{ gap:14px; }
-.nav-logo-text{ font-family:'Cormorant Garamond',serif; font-weight:700; font-size:1.9rem; color:var(--sage-dark); line-height:1.05; letter-spacing:0.005em; white-space:nowrap; }
-@media (max-width:768px){ .nav-logo-img{ height:54px; } .nav-logo-text{ font-size:1.45rem; } }
+.nav-logo-img{ width:auto; height:96px; }
+.nav .nav-inner{ height:124px; }
+.nav-logo{ gap:16px; }
+.nav-logo-text{ font-family:'Cormorant Garamond',serif; font-weight:700; font-size:2rem; color:var(--sage-dark); line-height:1.05; letter-spacing:0.005em; white-space:nowrap; }
+@media (max-width:768px){ .nav-logo-img{ height:64px; } .nav .nav-inner{ height:98px; } .nav-logo-text{ font-size:1.4rem; } }
 .footer-logo img{ width:132px; height:auto; filter:brightness(0) invert(1); opacity:0.95; }
 
 /* ---- Scroll reveal ---- */
@@ -157,3 +158,6 @@ h2{ font-weight:500; letter-spacing:-0.005em; }
 /* Get Involved: balanced 2x2 action grid (was an awkward 3+1) */
 .action-cards{ grid-template-columns:repeat(2,1fr); max-width:880px; margin-left:auto; margin-right:auto; }
 @media (max-width:620px){ .action-cards{ grid-template-columns:1fr; } }
+
+/* Signup success message */
+.signup-thanks{ font-family:'Cormorant Garamond',serif; font-style:italic; font-size:1.15rem; color:var(--sage-dark); margin-top:auto; }
