@@ -112,11 +112,11 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .btn-dog {
-  background: var(--brown);
+  background: var(--sage-dark);
   color: var(--white);
 }
 .btn-dog:hover {
-  background: var(--brown-light);
+  background: var(--sage);
   color: var(--white);
   transform: translateY(-2px);
   box-shadow: var(--shadow-hover);
@@ -758,6 +758,47 @@ textarea:focus-visible {
   margin-bottom: 28px;
 }
 
+/* ========== EMAIL SIGNUP (Get Involved) ========== */
+.email-signup {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  margin-top: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.email-signup input[type="email"] {
+  flex: 1 1 180px;
+  min-width: 0;
+  padding: 13px 18px;
+  border: 2px solid var(--cream-dark);
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  background: var(--white);
+  transition: border-color var(--transition);
+}
+.email-signup input[type="email"]:focus {
+  outline: none;
+  border-color: var(--sage);
+}
+.email-signup .btn { flex: 0 0 auto; padding: 13px 28px; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap; border: 0;
+}
+
+/* Donation method awaiting its link (Stripe / PayPal go live with the nonprofit) */
+.method-value.method-pending {
+  color: var(--text-light);
+  font-style: italic;
+}
+
 /* ========== DONATE AMOUNTS ========== */
 .donate-selector {
   max-width: 600px;
@@ -1018,6 +1059,20 @@ textarea:focus-visible {
 .banner-sage p { color: rgba(255,255,255,0.85); }
 
 .banner-cream { background: var(--cream); }
+
+/* CTA buttons on the sage banner: white outline so they read clearly as buttons */
+.banner-sage .btn {
+  background: transparent;
+  color: var(--white);
+  border: 2px solid var(--white);
+}
+.banner-sage .btn:hover {
+  background: var(--white);
+  color: var(--sage-dark);
+  border-color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}
 
 /* ========== FOOTER ========== */
 .footer {

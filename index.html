@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="redesign.css">
 </head>
 <body>
 
@@ -15,11 +16,7 @@
   <nav class="nav">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">
-        <img src="logo.png" alt="Tail End Sanctuary Logo" class="nav-logo-img">
-        <div class="nav-logo-text">
-          Tail End Sanctuary
-          <small>LOVE. COMFORT. DIGNITY.</small>
-        </div>
+        <img src="images/logo-full.png" alt="Tail End Sanctuary" class="nav-logo-img">
       </a>
       <button class="nav-toggle" onclick="var l=document.querySelector('.nav-links');l.classList.toggle('open');this.setAttribute('aria-expanded',l.classList.contains('open'))" aria-expanded="false" aria-label="Toggle menu">☰</button>
       <ul class="nav-links">
@@ -27,7 +24,6 @@
         <li><a href="about.html">About Us</a></li>
         <li><a href="dogs.html">Meet the Dogs</a></li>
         <li><a href="get-involved.html">Get Involved</a></li>
-        <li><a href="contact.html">Contact</a></li>
         <li><a href="donate.html" class="btn btn-donate">Donate</a></li>
       </ul>
     </div>
@@ -36,56 +32,92 @@
   <main>
 
   <!-- HERO -->
-  <section class="hero-image hero-home">
-    <img src="images/dogs/ringo.jpeg" alt="Ringo, a senior dog at Tail End Sanctuary" class="hero-bg">
-    <div class="hero-overlay"></div>
-    <div class="container">
-      <div class="hero-content">
+  <section class="hero-ed">
+    <div class="hero-grid container">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">Lake Chapala · Mexico</span>
         <h1>Where every dog's final chapter is filled with love</h1>
+        <p class="subhead">Tail End Sanctuary gives senior street dogs a soft bed, gentle care, and the dignity of being loved for the rest of their days.</p>
         <div class="btn-group">
-          <a href="donate.html" class="btn btn-donate">Give Them a Peaceful Ending</a>
-          <a href="dogs.html" class="btn btn-dog">Meet the Dogs</a>
+          <a href="donate.html" class="btn btn-donate">Donate</a>
+          <a href="dogs.html" class="btn btn-secondary">Meet the Dogs</a>
         </div>
+      </div>
+      <div class="hero-plate-wrap reveal">
+        <figure class="plate plate--landscape">
+          <img src="images/home-hero.jpg" width="1280" height="890" alt="A senior dog resting at Tail End Sanctuary in Lake Chapala, Mexico">
+          <figcaption>At the sanctuary · Lake Chapala, Mexico</figcaption>
+        </figure>
       </div>
     </div>
   </section>
 
-  <!-- MEET TEDDY -->
-  <section class="section section-alt">
+  <!-- FACTS BAND -->
+  <section class="factsband">
+    <div class="facts-inner">
+      <div class="fact"><span class="fig">Senior</span><span class="lbl">Dogs only</span></div>
+      <div class="fact"><span class="fig">Lifelong</span><span class="lbl">Care, no exceptions</span></div>
+      <div class="fact"><span class="fig">Three</span><span class="lbl">Founders</span></div>
+      <div class="fact"><span class="fig">Ajijic</span><span class="lbl">Lake Chapala, Mexico</span></div>
+    </div>
+  </section>
+
+  <!-- MISSION -->
+  <section class="section section-cream">
+    <div class="container narrow center">
+      <span class="eyebrow">Our mission</span>
+      <p class="lead">To give lifelong care to senior stray dogs who have nowhere else to go — safety, comfort, compassion, and the dignity every dog deserves.</p>
+    </div>
+  </section>
+
+  <!-- FEATURED RESIDENT -->
+  <section class="section section-cream-dark">
     <div class="container">
-      <div class="story-block">
-        <div class="story-image">
-          <img src="images/dogs/teddy-home.jpg" alt="Teddy">
+      <div class="feature-row reveal">
+        <div class="feature-media">
+          <figure class="plate plate--video">
+            <video poster="images/teddy-poster.jpg" controls muted loop playsinline preload="metadata" width="576" height="1024">
+              <source src="images/teddy.mp4" type="video/mp4">
+              <img src="images/dogs/teddy-2026.jpg" alt="Teddy, a senior rescue dog at Tail End Sanctuary">
+            </video>
+            <figcaption>Teddy · in our care</figcaption>
+          </figure>
         </div>
-        <div class="story-content">
+        <div class="feature-text">
+          <span class="eyebrow">Featured resident</span>
           <h2>Meet Teddy</h2>
-          <p>Teddy was found wandering the streets at 10 years old—tired, alone, and in pain.</p>
-          <p><strong>He has cancer.</strong></p>
+          <p>Teddy was found wandering the streets at 10 years old—tired, alone, and in pain. <strong>He has cancer.</strong></p>
           <p>But today, Teddy is safe. He has a warm bed, gentle medical care, and people who sit with him, comfort him, and make sure he is never alone again.</p>
-          <p>At Tail End Sanctuary, dogs like Teddy are not defined by how they suffered—but by how they are loved in the time they have left. His story didn't end on that street. It began the moment someone saw him.</p>
-          <a href="donate.html" class="btn btn-dog">Help Dogs Like Teddy</a>
+          <p>Dogs like Teddy are not defined by how they suffered—but by how they are loved in the time they have left.</p>
+          <a href="donate.html" class="btn btn-donate">Help dogs like Teddy</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- MISSION STATEMENT -->
+  <!-- PULLQUOTE -->
   <section class="section section-cream">
     <div class="container">
-      <div class="section-centered">
-        <p class="mission-copy">At Tail End Sanctuary our mission is simple: to give lifelong care to senior stray dogs who have nowhere else to go. We believe every dog deserves safety, comfort, compassion, and dignity.</p>
-      </div>
+      <blockquote class="pullquote reveal"><p>A life that was invisible is finally seen.</p></blockquote>
     </div>
   </section>
 
-  <!-- WHY THIS MATTERS -->
-  <section class="section section-alt">
+  <!-- WHAT MOTIVATES US -->
+  <section class="section section-cream-dark">
     <div class="container">
-      <div style="max-width: 840px; margin: 0 auto; text-align: center;">
-        <h2 style="margin-bottom: 32px;">What Motivates Us</h2>
-        <p style="font-size: 1.1rem; line-height: 1.9; color: var(--text); margin-bottom: 20px;">Many Mexican street dogs never reach their senior years. Those who do have often endured years of hardship, scavenging to survive. When age slows them down they can no longer fend for themselves.</p>
-        <p style="font-size: 1.1rem; line-height: 1.9; color: var(--text); margin-bottom: 20px;">That's where Tail End Sanctuary steps in. We give these resilient dogs a soft place to rest their weary bones, regular nourishing meals, and the love and companionship they deserve.</p>
-        <p style="font-size: 1.15rem; line-height: 1.9; color: var(--sage-dark); font-weight: 500; font-style: italic;">A life that was invisible is finally seen.</p>
+      <div class="feature-row reverse reveal">
+        <div class="feature-media">
+          <figure class="plate plate--landscape">
+            <img src="images/dogs/valentino-2026.jpg" width="1200" height="995" alt="Valentino, a senior dog rescued from a highway">
+            <figcaption>Valentino · rescued from a highway</figcaption>
+          </figure>
+        </div>
+        <div class="feature-text">
+          <span class="eyebrow">What motivates us</span>
+          <h2>Seen, at last</h2>
+          <p>Many Mexican street dogs never reach their senior years. Those who do have often endured years of hardship, scavenging to survive. When age slows them down, they can no longer fend for themselves.</p>
+          <p>That's where Tail End Sanctuary steps in — a soft place to rest weary bones, nourishing meals, and the companionship every dog deserves.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -108,31 +140,25 @@
     <div class="footer-inner">
       <div>
         <div class="footer-logo">
-          <img src="logo.png" alt="Tail End Sanctuary">
-          <div class="footer-logo-text">
-            Tail End Sanctuary
-            <small>LOVE. COMFORT. DIGNITY.</small>
-          </div>
+          <img src="images/logo-full.png" alt="Tail End Sanctuary">
         </div>
         <p class="footer-tagline">Lake Chapala, Mexico</p>
       </div>
-      
+
       <div>
         <h4>Explore</h4>
         <ul class="footer-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="dogs.html">Meet the Dogs</a></li>
-          <li><a href="get-involved.html">Get Involved</a></li>
         </ul>
       </div>
-      
+
       <div>
-        <h4>Get Involved</h4>
+        <h4>Support</h4>
         <ul class="footer-links">
+          <li><a href="get-involved.html">Get Involved</a></li>
           <li><a href="donate.html">Donate</a></li>
-          <li><a href="get-involved.html">Ways to Help</a></li>
-          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
 
@@ -144,11 +170,24 @@
         <p style="margin-top: 16px; font-size: 0.9rem; color: rgba(255,255,255,0.7); line-height: 1.6;">Email us to receive updates on our dogs and their stories.</p>
       </div>
     </div>
-    
+
     <div class="footer-bottom">
       <p>© 2026 Tail End Sanctuary. All rights reserved. • Registered Nonprofit</p>
     </div>
   </footer>
+
+  <script>
+    (function(){
+      var els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+        els.forEach(function(e){ e.classList.add('in'); }); return;
+      }
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+      }, {threshold:0.12});
+      els.forEach(function(e){ io.observe(e); });
+    })();
+  </script>
 
 </body>
 </html>

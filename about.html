@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="redesign.css">
 </head>
 <body>
 
@@ -15,11 +16,7 @@
   <nav class="nav">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">
-        <img src="logo.png" alt="Tail End Sanctuary Logo" class="nav-logo-img">
-        <div class="nav-logo-text">
-          Tail End Sanctuary
-          <small>LOVE. COMFORT. DIGNITY.</small>
-        </div>
+        <img src="images/logo-full.png" alt="Tail End Sanctuary" class="nav-logo-img">
       </a>
       <button class="nav-toggle" onclick="var l=document.querySelector('.nav-links');l.classList.toggle('open');this.setAttribute('aria-expanded',l.classList.contains('open'))" aria-expanded="false" aria-label="Toggle menu">☰</button>
       <ul class="nav-links">
@@ -27,7 +24,6 @@
         <li><a href="about.html" class="active">About Us</a></li>
         <li><a href="dogs.html">Meet the Dogs</a></li>
         <li><a href="get-involved.html">Get Involved</a></li>
-        <li><a href="contact.html">Contact</a></li>
         <li><a href="donate.html" class="btn btn-donate">Donate</a></li>
       </ul>
     </div>
@@ -36,61 +32,70 @@
   <main>
 
   <!-- HERO -->
-  <section class="hero-simple">
-    <img src="images/dogs/teddy.jpeg" alt="Senior dog resting" class="hero-bg">
-    <div class="container">
-      <div class="hero-content" style="max-width: 100%; text-align: center;">
-        <h1>About Us</h1>
+  <section class="hero-ed hero-portrait">
+    <div class="hero-grid container">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">Lake Chapala · Mexico</span>
+        <h1>About Tail End Sanctuary</h1>
+        <p class="subhead">A home for senior street dogs in the Lake Chapala area of Mexico — where a dog's last years are spent safe, comfortable, and loved.</p>
+        <div class="btn-group">
+          <a href="dogs.html" class="btn btn-donate">Meet the Dogs</a>
+          <a href="get-involved.html" class="btn btn-secondary">Get Involved</a>
+        </div>
+      </div>
+      <div class="hero-plate-wrap reveal">
+        <figure class="plate plate--portrait">
+          <img src="images/about-cindy.jpg" width="900" height="1200" alt="Cindy, a happy senior dog at Tail End Sanctuary">
+          <figcaption>Cindy · at the sanctuary</figcaption>
+        </figure>
       </div>
     </div>
   </section>
 
   <!-- OUR STORY -->
-  <section class="section section-alt">
+  <section class="section section-cream">
+    <div class="container narrow">
+      <div class="sec-intro"><span class="eyebrow">Our story</span><h2>One dog led to another</h2></div>
+      <div style="font-size:1.08rem; line-height:1.9; color:var(--text);">
+        <p style="margin-bottom:22px;">In our community, the Lake Chapala area of Mexico, people kept identifying older stray dogs living on the street on their own — dogs who were no longer young, unwanted, and often struggling just to get through each day.</p>
+        <p style="margin-bottom:22px;">They were easy to overlook but impossible to forget once you truly saw them.</p>
+        <p style="margin-bottom:22px;">What started as concern turned into action. One dog led to another, and it became clear that these senior dogs needed something different — something beyond traditional rescue.</p>
+        <p style="margin-bottom:22px;">Our focus is on the quality of each dog's remaining time. For many of the dogs who come to us, this is the first time they experience consistent kindness. The first time somebody notices they are in pain. The first time someone stays.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PULLQUOTE -->
+  <section class="section section-cream-dark">
     <div class="container">
-      <div class="section-header">
-        <h2>Our Story</h2>
-      </div>
-      <div style="max-width: 780px; margin: 0 auto; font-size: 1.1rem; line-height: 1.85; color: var(--text);">
-        <p style="margin-bottom: 22px;">In our community, the Lake Chapala area of Mexico, people kept identifying older stray dogs living on the street on their own — dogs who were no longer young, unwanted, and often struggling just to get through each day.</p>
-
-        <p style="margin-bottom: 22px;">They were easy to overlook but impossible to forget once you truly saw them.</p>
-
-        <p style="margin-bottom: 22px;">What started as concern turned into action. One dog led to another, and it became clear that these senior dogs needed something different — something beyond traditional rescue.</p>
-
-        <p style="margin-bottom: 22px;">Our focus is on the quality of each dog's remaining time. For many of the dogs who come to us, this is the first time they experience consistent kindness. The first time somebody notices they are in pain. The first time someone stays.</p>
-
-        <p style="margin-bottom: 0; font-style: italic; color: var(--sage-dark); font-weight: 600;">We measure success in peaceful days.</p>
-      </div>
+      <blockquote class="pullquote reveal"><p>We measure success in peaceful days.</p></blockquote>
     </div>
   </section>
 
   <!-- OUR FOUNDERS -->
   <section class="section section-cream">
     <div class="container">
-      <div class="section-header">
-        <h2>Our Founders</h2>
-        <p>Three people brought together by a shared concern for senior dogs.</p>
+      <div class="sec-intro">
+        <span class="eyebrow">Our founders</span>
+        <h2>Three people, one promise</h2>
+        <p>Brought together by a shared concern for senior dogs.</p>
       </div>
-      
       <div class="founders-grid">
-        <div class="founder">
+        <div class="founder reveal">
           <div class="founder-photo">
             <img src="images/founders/jena-photo.png" alt="Jena Marie Olio">
           </div>
           <h3>Jena Marie Olio</h3>
           <p class="role">Over 20 years in dog rescue and training, Jena runs a sanctuary for dogs whose owners have passed away. She has long been dedicated to caring for senior dogs in their final stage of life.</p>
         </div>
-        
-        <div class="founder">
+        <div class="founder reveal">
           <div class="founder-photo">
             <img src="images/founders/ronni-new.jpeg" alt="Ronni Coppola">
           </div>
           <h3>Ronni Coppola</h3>
           <p class="role">A lifelong dog lover who has rescued and fostered some of the most vulnerable dogs in the community. Her compassion and hands-on care make a daily difference in the lives of our dogs.</p>
         </div>
-        
-        <div class="founder">
+        <div class="founder reveal">
           <div class="founder-photo">
             <img src="images/founders/juanita-new.jpeg" alt="Juanita Crampton">
           </div>
@@ -120,34 +125,25 @@
     <div class="footer-inner">
       <div>
         <div class="footer-logo">
-          <img src="logo.png" alt="Tail End Sanctuary">
-          <div class="footer-logo-text">
-            Tail End Sanctuary
-            <small>LOVE. COMFORT. DIGNITY.</small>
-          </div>
+          <img src="images/logo-full.png" alt="Tail End Sanctuary">
         </div>
         <p class="footer-tagline">Lake Chapala, Mexico</p>
       </div>
-      
       <div>
         <h4>Explore</h4>
         <ul class="footer-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="dogs.html">Meet the Dogs</a></li>
-          <li><a href="get-involved.html">Get Involved</a></li>
         </ul>
       </div>
-      
       <div>
-        <h4>Get Involved</h4>
+        <h4>Support</h4>
         <ul class="footer-links">
+          <li><a href="get-involved.html">Get Involved</a></li>
           <li><a href="donate.html">Donate</a></li>
-          <li><a href="get-involved.html">Ways to Help</a></li>
-          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
-
       <div>
         <h4>Connect</h4>
         <div class="footer-email">
@@ -156,11 +152,23 @@
         <p style="margin-top: 16px; font-size: 0.9rem; color: rgba(255,255,255,0.7); line-height: 1.6;">Email us to receive updates on our dogs and their stories.</p>
       </div>
     </div>
-    
     <div class="footer-bottom">
       <p>© 2026 Tail End Sanctuary. All rights reserved. • Registered Nonprofit</p>
     </div>
   </footer>
+
+  <script>
+    (function(){
+      var els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+        els.forEach(function(e){ e.classList.add('in'); }); return;
+      }
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+      }, {threshold:0.12});
+      els.forEach(function(e){ io.observe(e); });
+    })();
+  </script>
 
 </body>
 </html>

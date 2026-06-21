@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="redesign.css">
 </head>
 <body>
 
@@ -15,11 +16,7 @@
   <nav class="nav">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">
-        <img src="logo.png" alt="Tail End Sanctuary Logo" class="nav-logo-img">
-        <div class="nav-logo-text">
-          Tail End Sanctuary
-          <small>LOVE. COMFORT. DIGNITY.</small>
-        </div>
+        <img src="images/logo-full.png" alt="Tail End Sanctuary" class="nav-logo-img">
       </a>
       <button class="nav-toggle" onclick="var l=document.querySelector('.nav-links');l.classList.toggle('open');this.setAttribute('aria-expanded',l.classList.contains('open'))" aria-expanded="false" aria-label="Toggle menu">☰</button>
       <ul class="nav-links">
@@ -27,7 +24,6 @@
         <li><a href="about.html">About Us</a></li>
         <li><a href="dogs.html">Meet the Dogs</a></li>
         <li><a href="get-involved.html">Get Involved</a></li>
-        <li><a href="contact.html">Contact</a></li>
         <li><a href="donate.html" class="btn btn-donate active">Donate</a></li>
       </ul>
     </div>
@@ -36,22 +32,59 @@
   <main>
 
   <!-- HERO -->
-  <section class="hero-dark">
-    <img src="images/dogs/teddy-home.jpg" alt="Teddy at Tail End Sanctuary" class="hero-bg">
-    <div class="hero-overlay"></div>
+  <section class="hero-ed">
+    <div class="hero-grid container">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">Donate</span>
+        <h1>Their next chapter starts with you</h1>
+        <p class="subhead">Every contribution goes directly to the dogs' food, medical care, and a warm place to rest. Choose the way that works best for you.</p>
+        <div class="btn-group">
+          <a href="#ways-to-give" class="btn btn-donate">Ways to Give</a>
+        </div>
+      </div>
+      <div class="hero-plate-wrap reveal">
+        <figure class="plate plate--square">
+          <img src="images/donate.jpg" width="1400" height="1432" alt="A senior dog resting at Tail End Sanctuary">
+          <figcaption>At the sanctuary · Lake Chapala, Mexico</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHERE YOUR GIFT GOES -->
+  <section class="section section-cream-dark">
     <div class="container">
-      <div class="hero-content">
-        <h1>Their Next Chapter Starts With You</h1>
+      <div class="sec-intro">
+        <span class="eyebrow">Where your gift goes</span>
+        <h2>Straight to the dogs' care</h2>
+      </div>
+      <div class="giftgrid">
+        <div class="gift reveal">
+          <div class="gift-ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#4E5E46" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h18a9 9 0 0 1-18 0Z"/><path d="M12 11V6"/><path d="M9.5 6.5c0-1.5 5-1.5 5 0"/></svg></div>
+          <h3>Food &amp; nutrition</h3>
+          <p>Nourishing daily meals for dogs who once had to scavenge just to survive.</p>
+        </div>
+        <div class="gift reveal">
+          <div class="gift-ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#4E5E46" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2 5 4-10 2 5h6"/></svg></div>
+          <h3>Veterinary care</h3>
+          <p>Vet visits, medication, and gentle pain management for aging bodies.</p>
+        </div>
+        <div class="gift reveal">
+          <div class="gift-ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#4E5E46" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-6 8 6"/><path d="M6 10v9h12v-9"/><path d="M9 19v-4a3 3 0 0 1 6 0v4"/></svg></div>
+          <h3>A warm bed for life</h3>
+          <p>A safe, comfortable place to rest — for the rest of their days.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- WAYS TO GIVE -->
-  <section class="section section-cream" id="donate-now">
+  <section class="section section-cream" id="ways-to-give">
     <div class="container">
-      <div class="section-header">
-        <h2 style="margin-bottom: 12px;">Ways to Give</h2>
-        <p>Your generosity gives senior dogs the safety, comfort, and love they deserve in their final chapter. Every contribution goes directly to the dogs' care. Choose the method that works best for you.</p>
+      <div class="sec-intro">
+        <span class="eyebrow">Ways to give</span>
+        <h2>Choose what works for you</h2>
+        <p>Every contribution goes directly to the dogs' care.</p>
       </div>
 
       <div class="donation-methods">
@@ -59,15 +92,15 @@
         <div class="method-card">
           <span class="method-label">Credit Card</span>
           <h4>Stripe</h4>
-          <p class="method-value">IL@veSenta1970</p>
-          <p class="method-detail">Secure online card payments.</p>
+          <p class="method-value method-pending">Coming soon</p>
+          <p class="method-detail">Secure card payments — available once our nonprofit registration is finalized.</p>
         </div>
 
         <div class="method-card">
           <span class="method-label">Online</span>
           <h4>PayPal</h4>
-          <p class="method-value"><a href="https://www.paypal.me/JenaMarieOlio" target="_blank" rel="noopener">paypal.me/JenaMarieOlio</a></p>
-          <p class="method-detail">Send securely through PayPal.</p>
+          <p class="method-value method-pending">Coming soon</p>
+          <p class="method-detail">Send securely through PayPal — available once our nonprofit registration is finalized.</p>
         </div>
 
         <div class="method-card">
@@ -93,7 +126,7 @@
           <dl>
             <dt>EIN</dt><dd>99-1390093</dd>
           </dl>
-          <p class="method-detail" style="margin-top: 12px;">Please contact <a href="mailto:events@tailendsanctuary.org">events@tailendsanctuary.org</a> for full tax-advantaged giving details.</p>
+          <p class="method-detail" style="margin-top: 12px;">Please contact <a href="mailto:info@tailendsanctuary.org">info@tailendsanctuary.org</a> for full tax-advantaged giving details.</p>
         </div>
 
       </div>
@@ -109,34 +142,25 @@
     <div class="footer-inner">
       <div>
         <div class="footer-logo">
-          <img src="logo.png" alt="Tail End Sanctuary">
-          <div class="footer-logo-text">
-            Tail End Sanctuary
-            <small>LOVE. COMFORT. DIGNITY.</small>
-          </div>
+          <img src="images/logo-full.png" alt="Tail End Sanctuary">
         </div>
         <p class="footer-tagline">Lake Chapala, Mexico</p>
       </div>
-      
       <div>
         <h4>Explore</h4>
         <ul class="footer-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="dogs.html">Meet the Dogs</a></li>
-          <li><a href="get-involved.html">Get Involved</a></li>
         </ul>
       </div>
-      
       <div>
-        <h4>Get Involved</h4>
+        <h4>Support</h4>
         <ul class="footer-links">
+          <li><a href="get-involved.html">Get Involved</a></li>
           <li><a href="donate.html">Donate</a></li>
-          <li><a href="get-involved.html">Ways to Help</a></li>
-          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
-
       <div>
         <h4>Connect</h4>
         <div class="footer-email">
@@ -145,11 +169,23 @@
         <p style="margin-top: 16px; font-size: 0.9rem; color: rgba(255,255,255,0.7); line-height: 1.6;">Email us to receive updates on our dogs and their stories.</p>
       </div>
     </div>
-    
     <div class="footer-bottom">
       <p>© 2026 Tail End Sanctuary. All rights reserved. • Registered Nonprofit</p>
     </div>
   </footer>
+
+  <script>
+    (function(){
+      var els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+        els.forEach(function(e){ e.classList.add('in'); }); return;
+      }
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+      }, {threshold:0.12});
+      els.forEach(function(e){ io.observe(e); });
+    })();
+  </script>
 
 </body>
 </html>

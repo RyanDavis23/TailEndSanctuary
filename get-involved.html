@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="redesign.css">
 </head>
 <body>
 
@@ -15,11 +16,7 @@
   <nav class="nav">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">
-        <img src="logo.png" alt="Tail End Sanctuary Logo" class="nav-logo-img">
-        <div class="nav-logo-text">
-          Tail End Sanctuary
-          <small>LOVE. COMFORT. DIGNITY.</small>
-        </div>
+        <img src="images/logo-full.png" alt="Tail End Sanctuary" class="nav-logo-img">
       </a>
       <button class="nav-toggle" onclick="var l=document.querySelector('.nav-links');l.classList.toggle('open');this.setAttribute('aria-expanded',l.classList.contains('open'))" aria-expanded="false" aria-label="Toggle menu">☰</button>
       <ul class="nav-links">
@@ -27,7 +24,6 @@
         <li><a href="about.html">About Us</a></li>
         <li><a href="dogs.html">Meet the Dogs</a></li>
         <li><a href="get-involved.html" class="active">Get Involved</a></li>
-        <li><a href="contact.html">Contact</a></li>
         <li><a href="donate.html" class="btn btn-donate">Donate</a></li>
       </ul>
     </div>
@@ -36,77 +32,78 @@
   <main>
 
   <!-- HERO -->
-  <section class="hero-dark hero-get-involved">
-    <img src="images/get-involved.jpeg" alt="Founders of Tail End Sanctuary with the dogs" class="hero-bg" style="object-position: center 20%;">
-    <div class="hero-overlay"></div>
-    <div class="container">
-      <div class="hero-content">
-        <h1>Get Involved</h1>
+  <section class="hero-ed">
+    <div class="hero-grid container">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">Lake Chapala · Mexico</span>
+        <h1>Help give a senior dog a soft landing</h1>
+        <p class="subhead">There are many ways to give these dogs the comfort and dignity they deserve — donate, give monthly, spread the word, or stay close to their stories.</p>
+        <div class="btn-group">
+          <a href="donate.html" class="btn btn-donate">Donate</a>
+          <a href="#ways" class="btn btn-secondary">See the Ways to Help</a>
+        </div>
       </div>
-    </div>
-  </section>
-
-  <!-- INTRO -->
-  <section class="section section-alt" style="padding: 60px 24px;">
-    <div class="container">
-      <div style="text-align: center; max-width: 840px; margin: 0 auto;">
-        <p class="mission-copy mission-copy-small">There are many ways to help give senior dogs the comfort and dignity they deserve.</p>
+      <div class="hero-plate-wrap reveal">
+        <figure class="plate plate--landscape">
+          <img src="images/senta.jpg" width="1600" height="1146" alt="Senta, a senior dog at Tail End Sanctuary">
+          <figcaption>Senta · photo by Jena Marie Olio</figcaption>
+        </figure>
       </div>
     </div>
   </section>
 
   <!-- ACTION CARDS -->
-  <section class="section section-cream">
+  <section class="section section-cream" id="ways">
     <div class="container">
+      <div class="sec-intro">
+        <span class="eyebrow">Ways to help</span>
+        <h2>Every act of kindness matters</h2>
+      </div>
       <div class="action-cards">
-        
-        <!-- Donate -->
-        <div class="action-card">
+
+        <div class="action-card reveal">
           <h3>Donate</h3>
           <p>A single donation can change a dog's life. Your donation provides food, medical care, and a peaceful place to rest.</p>
           <a href="donate.html" class="btn btn-donate">Donate Now</a>
         </div>
 
-        <!-- Give Monthly -->
-        <div class="action-card">
+        <div class="action-card reveal">
           <h3>Give Monthly</h3>
           <p>Monthly support allows us to plan ahead and say yes to the next dog in need.</p>
           <a href="donate.html" class="btn btn-donate">Become a Monthly Donor</a>
         </div>
 
-        <!-- Spread the Word -->
-        <div class="action-card">
+        <div class="action-card reveal">
           <h3>Spread the Word</h3>
           <p>A shared post reaches someone like you who cares.</p>
           <span class="btn btn-muted">Social Links Coming Soon</span>
         </div>
 
-        <!-- Stay in Touch -->
-        <div class="action-card">
+        <div class="action-card reveal">
           <h3>Stay in Touch</h3>
-          <p>Stay connected and see the difference your support makes. We'll share updates on the dogs and their stories.</p>
-          <a href="contact.html" class="btn btn-secondary">Join Our Email List</a>
+          <p>Stay connected for updates on the sanctuary and our dogs.</p>
+          <form class="email-signup" name="email-signup" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="email-signup">
+            <p class="visually-hidden"><label>Leave this empty: <input name="bot-field"></label></p>
+            <label class="visually-hidden" for="signup-email">Email address</label>
+            <input type="email" id="signup-email" name="email" placeholder="you@email.com" autocomplete="email" required>
+            <button type="submit" class="btn btn-donate">Join</button>
+          </form>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- EVERY ACT MATTERS -->
-  <section class="section section-alt" style="padding-top: 72px; padding-bottom: 72px;">
-    <div class="container">
-      <div style="max-width: 1000px; margin: 0 auto;">
-        <h2 style="text-align: center; font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 0;">Every Act of Kindness Matters</h2>
-      </div>
-    </div>
-  </section>
-
-  <!-- BOTTOM CTA -->
+  <!-- CLOSING CTA -->
   <section class="banner banner-sage">
     <div class="container">
-      <h2>However You Choose to Help</h2>
-      <p>You are part of giving these dogs the dignity they deserve.</p>
-      <a href="donate.html" class="btn btn-donate" style="padding: 18px 42px; font-size: 1.05rem;">Donate Now</a>
+      <h2>Every Act of Kindness Matters</h2>
+      <p>Whether you give once, give monthly, or simply share their stories — you are part of giving these dogs the dignity they deserve.</p>
+      <div class="btn-group" style="justify-content: center;">
+        <a href="donate.html" class="btn btn-donate">Donate</a>
+        <a href="dogs.html" class="btn btn-dog">Meet the Dogs</a>
+      </div>
     </div>
   </section>
 
@@ -117,34 +114,25 @@
     <div class="footer-inner">
       <div>
         <div class="footer-logo">
-          <img src="logo.png" alt="Tail End Sanctuary">
-          <div class="footer-logo-text">
-            Tail End Sanctuary
-            <small>LOVE. COMFORT. DIGNITY.</small>
-          </div>
+          <img src="images/logo-full.png" alt="Tail End Sanctuary">
         </div>
         <p class="footer-tagline">Lake Chapala, Mexico</p>
       </div>
-      
       <div>
         <h4>Explore</h4>
         <ul class="footer-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="dogs.html">Meet the Dogs</a></li>
-          <li><a href="get-involved.html">Get Involved</a></li>
         </ul>
       </div>
-      
       <div>
-        <h4>Get Involved</h4>
+        <h4>Support</h4>
         <ul class="footer-links">
+          <li><a href="get-involved.html">Get Involved</a></li>
           <li><a href="donate.html">Donate</a></li>
-          <li><a href="get-involved.html">Ways to Help</a></li>
-          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
-
       <div>
         <h4>Connect</h4>
         <div class="footer-email">
@@ -153,11 +141,23 @@
         <p style="margin-top: 16px; font-size: 0.9rem; color: rgba(255,255,255,0.7); line-height: 1.6;">Email us to receive updates on our dogs and their stories.</p>
       </div>
     </div>
-    
     <div class="footer-bottom">
       <p>© 2026 Tail End Sanctuary. All rights reserved. • Registered Nonprofit</p>
     </div>
   </footer>
+
+  <script>
+    (function(){
+      var els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+        els.forEach(function(e){ e.classList.add('in'); }); return;
+      }
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+      }, {threshold:0.12});
+      els.forEach(function(e){ io.observe(e); });
+    })();
+  </script>
 
 </body>
 </html>

@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="redesign.css">
 </head>
 <body>
 
@@ -15,11 +16,7 @@
   <nav class="nav">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">
-        <img src="logo.png" alt="Tail End Sanctuary Logo" class="nav-logo-img">
-        <div class="nav-logo-text">
-          Tail End Sanctuary
-          <small>LOVE. COMFORT. DIGNITY.</small>
-        </div>
+        <img src="images/logo-full.png" alt="Tail End Sanctuary" class="nav-logo-img">
       </a>
       <button class="nav-toggle" onclick="var l=document.querySelector('.nav-links');l.classList.toggle('open');this.setAttribute('aria-expanded',l.classList.contains('open'))" aria-expanded="false" aria-label="Toggle menu">☰</button>
       <ul class="nav-links">
@@ -27,7 +24,6 @@
         <li><a href="about.html">About Us</a></li>
         <li><a href="dogs.html" class="active">Meet the Dogs</a></li>
         <li><a href="get-involved.html">Get Involved</a></li>
-        <li><a href="contact.html">Contact</a></li>
         <li><a href="donate.html" class="btn btn-donate">Donate</a></li>
       </ul>
     </div>
@@ -36,61 +32,65 @@
   <main>
 
   <!-- HERO -->
-  <section class="hero-image hero-dogs">
-    <img src="images/dogs/pugsley.jpeg" alt="Pugsley, a senior dog at Tail End Sanctuary" class="hero-bg" style="object-position: 50% 36%;">
-    <div class="hero-overlay"></div>
-    <div class="container">
-      <div class="hero-content">
+  <section class="hero-ed">
+    <div class="hero-grid container">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">Lake Chapala · Mexico</span>
         <h1>Meet the Dogs</h1>
+        <p class="subhead">Each one was found on the streets in their senior years. Each one is now home for the rest of their days — cared for, comfortable, and loved.</p>
+        <div class="btn-group">
+          <a href="donate.html" class="btn btn-donate">Help a Dog</a>
+          <a href="get-involved.html" class="btn btn-secondary">Get Involved</a>
+        </div>
+      </div>
+      <div class="hero-plate-wrap reveal">
+        <figure class="plate plate--square">
+          <img src="images/dogs/nita.jpg" width="1200" height="1107" alt="Nita, a senior blind white shepherd at Tail End Sanctuary">
+          <figcaption>Nita · rescued in Ajijic</figcaption>
+        </figure>
       </div>
     </div>
   </section>
 
   <!-- DOG CARDS -->
-  <section class="section section-alt">
+  <section class="section section-cream-dark">
     <div class="container">
       <div class="cards-grid">
-        
+
         <!-- Teddy -->
-        <div class="card">
+        <div class="card reveal">
           <div class="card-featured-badge">FEATURED</div>
           <div class="card-image">
-            <img src="images/dogs/teddy-home.jpg" alt="Teddy">
+            <img src="images/dogs/teddy-2026.jpg" alt="Teddy">
           </div>
           <div class="card-body">
-            <div class="card-title">
-              <h3>Teddy</h3>
-            </div>
+            <div class="card-title"><h3>Teddy</h3></div>
             <p class="card-meta">Age 10 | Rescued from the street</p>
             <p>Teddy was found wandering alone, a 10 year old senior stray dog in pain. He had been living in a small Mexican village with no one to notice or care for him. He was discovered by a young couple who chose to notice him and bring him to the attention of Tail End Sanctuary. Teddy has been diagnosed with Cancer. He is receiving medical attention and loving care, never alone again to fend for himself.</p>
             <a href="donate.html" class="btn btn-dog">Help a dog like Teddy</a>
           </div>
         </div>
 
-        <!-- Pugsley -->
-        <div class="card">
+        <!-- Nita -->
+        <div class="card reveal">
           <div class="card-image">
-            <img src="images/dogs/pugsley.jpeg" alt="Pugsley">
+            <img src="images/dogs/nita.jpg" alt="Nita, a senior blind white shepherd at Tail End Sanctuary">
           </div>
           <div class="card-body">
-            <div class="card-title">
-              <h3>Pugsley</h3>
-            </div>
-            <p class="card-meta">Age 8-10 | Rescued from the street</p>
-            <p>Once upon a time, Pugsley lived in a house on a hill. He was the prince of his realm. Then tragedy struck, his mama died, and he was placed in another home. We have no information as to his life since then until he was found blind and wandering in the middle of a street in a local village. Now he is safe.</p>
-            <a href="donate.html" class="btn btn-dog">Help a dog like Pugsley</a>
+            <div class="card-title"><h3>Nita</h3></div>
+            <p class="card-meta">Senior | Rescued from the street</p>
+            <p>Nita was found late one night in Ajijic. She was obviously blind and unaware she was lying in the middle of the street. A kind neighbor led this beautiful white shepherd to safety for the night. Nita was dirty, skin and bone and truly lost. The following day Nita was taken to the vet then directly to Tail End Sanctuary where she was welcomed and cared for with great love and devotion.</p>
+            <a href="donate.html" class="btn btn-dog">Help a dog like Nita</a>
           </div>
         </div>
 
         <!-- Valentino -->
-        <div class="card">
+        <div class="card reveal">
           <div class="card-image">
-            <img src="images/dogs/valentino.jpeg" alt="Valentino">
+            <img src="images/dogs/valentino-2026.jpg" alt="Valentino">
           </div>
           <div class="card-body">
-            <div class="card-title">
-              <h3>Valentino</h3>
-            </div>
+            <div class="card-title"><h3>Valentino</h3></div>
             <p class="card-meta">Age 8 | Rescued from the street</p>
             <p>Valentino was found wandering in the middle of a highway beside himself with fear. A kind person opened her passenger door and he jumped in. We expected that he would be an easy dog to place in a home. Then he was diagnosed with cancer. He is being treated and is expected to make a full recovery. Had he not hopped in that car he would surely have died a slow and agonizing death.</p>
             <a href="donate.html" class="btn btn-dog">Help a dog like Valentino</a>
@@ -98,14 +98,12 @@
         </div>
 
         <!-- Coffee -->
-        <div class="card">
+        <div class="card reveal">
           <div class="card-image">
-            <img src="images/dogs/coffee.jpeg" alt="Coffee">
+            <img src="images/dogs/coffee-2026.jpg" alt="Coffee">
           </div>
           <div class="card-body">
-            <div class="card-title">
-              <h3>Coffee</h3>
-            </div>
+            <div class="card-title"><h3>Coffee</h3></div>
             <p class="card-meta">Age 10 | Rescued from the street</p>
             <p>Coffee had an owner once. He roamed the streets during the day, neglected, and likely hit by a car with no medical intervention, leaving him crippled. He was one of a pack of four. When the owner died, they were all left homeless. Eventually Coffee was sent to a rescue where they determined he should be euthanized—an older dog, unadoptable with his wonky gait. Fortunately he was accepted into Tail End Sanctuary where he could be appreciated for his sweet nature, where he could be seen beyond his age and his physical condition. He continues to be loved for his own unique nature, hobbling about with a love of life.</p>
             <a href="donate.html" class="btn btn-dog">Help a dog like Coffee</a>
@@ -113,14 +111,12 @@
         </div>
 
         <!-- Benito -->
-        <div class="card">
+        <div class="card reveal">
           <div class="card-image">
             <img src="images/dogs/benito.png" alt="Benito">
           </div>
           <div class="card-body">
-            <div class="card-title">
-              <h3>Benito</h3>
-            </div>
+            <div class="card-title"><h3>Benito</h3></div>
             <p class="card-meta">Age 8 | Rescued from the street</p>
             <p>Benito lived with a homeless person until that person disappeared. He was in terrible condition when rescued but has been nursed back to health. This little pittie has proven that you can teach an old dog new tricks. He has learned to be quite a snuggler and likes nothing better than curling up next to you on the couch.</p>
             <a href="donate.html" class="btn btn-dog">Help a dog like Benito</a>
@@ -128,14 +124,12 @@
         </div>
 
         <!-- Chester -->
-        <div class="card">
+        <div class="card reveal">
           <div class="card-image">
             <img src="images/dogs/chester.jpeg" alt="Chester">
           </div>
           <div class="card-body">
-            <div class="card-title">
-              <h3>Chester</h3>
-            </div>
+            <div class="card-title"><h3>Chester</h3></div>
             <p class="card-meta">Age 10 | Rescued from the street</p>
             <p>Chester was found on the street at age 10 with a severe skin condition and a defeated spirit. With his scarred face, torn ear, and missing front teeth, he likely had a life as a bait dog used to train fighting dogs. He was fearful and resisted being caught. Several Mexican boys were offered some pesos to find him and bring him to the rescuer. They were successful and from then on Chester had a life filled with care and love. He had a life of extremes, first with fear and aggression, then with love and compassion.</p>
             <a href="donate.html" class="btn btn-dog">Help a dog like Chester</a>
@@ -146,13 +140,14 @@
     </div>
   </section>
 
-  <!-- CTA SECTION -->
-  <section class="section section-cream">
+  <!-- CTA BANNER -->
+  <section class="banner banner-sage">
     <div class="container">
-      <div style="max-width: 900px; margin: 0 auto; background: var(--white); padding: 60px 48px; border-radius: var(--radius); box-shadow: var(--shadow); text-align: center;">
-        <h2 style="margin-bottom: 24px; font-size: clamp(1.8rem, 4vw, 2.5rem);">You can help them live their best days.</h2>
-        <p style="font-size: 1.05rem; color: var(--text-light); margin-bottom: 32px;">With your support, we can keep giving these dogs the love, care, and comfort they deserve.</p>
-        <a href="donate.html" class="btn btn-donate" style="padding: 18px 42px; font-size: 1.05rem;">Donate to Make a Difference</a>
+      <h2>You can help them live their best days.</h2>
+      <p>With your support, we can keep giving these dogs the love, care, and comfort they deserve.</p>
+      <div class="btn-group" style="justify-content: center;">
+        <a href="donate.html" class="btn btn-donate">Donate</a>
+        <a href="get-involved.html" class="btn btn-dog">Get Involved</a>
       </div>
     </div>
   </section>
@@ -164,34 +159,25 @@
     <div class="footer-inner">
       <div>
         <div class="footer-logo">
-          <img src="logo.png" alt="Tail End Sanctuary">
-          <div class="footer-logo-text">
-            Tail End Sanctuary
-            <small>LOVE. COMFORT. DIGNITY.</small>
-          </div>
+          <img src="images/logo-full.png" alt="Tail End Sanctuary">
         </div>
         <p class="footer-tagline">Lake Chapala, Mexico</p>
       </div>
-      
       <div>
         <h4>Explore</h4>
         <ul class="footer-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="dogs.html">Meet the Dogs</a></li>
-          <li><a href="get-involved.html">Get Involved</a></li>
         </ul>
       </div>
-      
       <div>
-        <h4>Get Involved</h4>
+        <h4>Support</h4>
         <ul class="footer-links">
+          <li><a href="get-involved.html">Get Involved</a></li>
           <li><a href="donate.html">Donate</a></li>
-          <li><a href="get-involved.html">Ways to Help</a></li>
-          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
-
       <div>
         <h4>Connect</h4>
         <div class="footer-email">
@@ -200,11 +186,23 @@
         <p style="margin-top: 16px; font-size: 0.9rem; color: rgba(255,255,255,0.7); line-height: 1.6;">Email us to receive updates on our dogs and their stories.</p>
       </div>
     </div>
-    
     <div class="footer-bottom">
       <p>© 2026 Tail End Sanctuary. All rights reserved. • Registered Nonprofit</p>
     </div>
   </footer>
+
+  <script>
+    (function(){
+      var els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+        els.forEach(function(e){ e.classList.add('in'); }); return;
+      }
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+      }, {threshold:0.1});
+      els.forEach(function(e){ io.observe(e); });
+    })();
+  </script>
 
 </body>
 </html>
