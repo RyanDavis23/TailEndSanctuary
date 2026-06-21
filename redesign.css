@@ -104,9 +104,10 @@ h2{ font-weight:500; letter-spacing:-0.005em; }
 }
 
 /* ---- Logo: dog-mark in nav, full lockup (white) in footer ---- */
-.nav-logo-img{ width:auto; height:86px; }
-.nav-logo{ gap:0; }
-@media (max-width:768px){ .nav-logo-img{ height:58px; } }
+.nav-logo-img{ width:auto; height:54px; }
+.nav-logo{ gap:13px; }
+.nav-logo-text{ font-family:'Cormorant Garamond',serif; font-weight:600; font-size:1.55rem; color:var(--sage-dark); line-height:1.05; letter-spacing:0.01em; }
+@media (max-width:768px){ .nav-logo-img{ height:46px; } .nav-logo-text{ font-size:1.28rem; } }
 .footer-logo img{ width:132px; height:auto; filter:brightness(0) invert(1); opacity:0.95; }
 
 /* ---- Scroll reveal ---- */
